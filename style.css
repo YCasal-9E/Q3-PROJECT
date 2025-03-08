@@ -18,5 +18,5 @@ table, th, td {
 	text-align: center;
 }
 bg-custom{
-	backgoround-color: #683072;
+	backgoround-color: #683072 !important;
 }
