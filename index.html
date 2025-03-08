@@ -43,7 +43,7 @@
     </div>
  </nav>
 	
-<div class="container main-cont mt-4 mb-4 p-4">
+<div class="container main-cont mt-4 mb-4 p-4 animate__animated animate__zoomIn">
     <div class="row">
         <div class="col-12">
             <div class="container-fluid p-4 fg-cont mt-2 mb-4">
@@ -58,8 +58,8 @@
         </div>
         <div class="col-md-7 p-4">
             <div class="form-container">
-                <label for="from" class="form-label">Leaving From:</label>
-                <select id="from" class="form-select">
+                <label for="from" class="form-label mb-2">Leaving From:</label>
+                <select id="from" class="form-select mb-3">
                     <option value="" disabled selected>Select station</option>
 		    <option>Antipolo</option>
                     <option>Marikina-Pasig</option>
@@ -76,8 +76,8 @@
                     <option>Recto</option>
                 </select>
 
-                <label for="to" class="form-label mt-3">Going To:</label>
-                <select id="to" class="form-select">
+                <label for="to" class="form-label mt-3 mb-2">Going To:</label>
+                <select id="to" class="form-select mb-3">
                     <option value="" disabled selected>Select station</option>
 		    <option>Antipolo</option>
                     <option>Marikina-Pasig</option>
@@ -94,8 +94,8 @@
                     <option>Recto</option>
                 </select>
 
-                <button class="btn btn-purple mt-3" onclick="calculateFare(false)">Regular Fare</button>
-                <button class="btn btn-secondary mt-2" onclick="calculateFare(true)">Discounted Fare</button>
+                <button class="btn btn-purple mt-3 mb-3" onclick="calculateFare(false)">Regular Fare</button>
+                <button class="btn btn-secondary mt-3 mb-3" onclick="calculateFare(true)">Discounted Fare</button>
 
                 <p id="fare-result" class="mb-3"></p>
             </div>
