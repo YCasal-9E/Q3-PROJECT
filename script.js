@@ -14,6 +14,14 @@ console.log("Script is loaded!");
             "Legarda": { "Antipolo": 25, "Marikina-Pasig": 24, "Santolan": 22, "Katipunan": 21, "Anonas": 20, "Araneta Center-Cubao": 18, "Betty Go-Belmonte": 17, "Gilmore": 16, "J. Ruiz": 15, "V. Mapa": 14, "Pureza": 13, "Recto": 14 },
             "Recto": { "Antipolo": 28, "Marikina-Pasig": 27, "Santolan": 25, "Katipunan": 24, "Anonas": 23, "Araneta Center-Cubao": 20, "Betty Go-Belmonte": 19, "Gilmore": 18, "J. Ruiz": 17, "V. Mapa": 16, "Pureza": 15, "Legarda": 14 }
          };
+
+    var fare = fareMatrix[from]?.[to]; 
+
+    if (fare === undefined) {
+        alert("Invalid route selected.");
+        document.getElementById("fare-result").innerText = "Invalid route selected.";
+        return;
+    }
         
         function calculateFare(isDiscounted) {
             var from = fromSelect.value;
