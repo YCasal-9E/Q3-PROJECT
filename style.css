@@ -32,7 +32,48 @@ table, th, td {
 
 .btn-custom {
     background-color: #E5D39C !important;
-    color: #000 !important; /* Makes text readable */
+    color: #000 !important; 
     border: none;
+}
+.index-body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://appassets.mvtdev.com/map/41/l/1022/237346/2.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+}
+.main-cont {
+    background: rgba(255, 255, 153, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.ticket-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+.form-container {
+    text-align: left;
+}
+label, select, button, p {
+    display: block;
+    margin-bottom: 10px;
+}
+select, button {
+    padding: 8px;
+    font-size: 16px;
+}
+#fare-result {
+    font-size: 20px;
+    font-weight: bold;
 }
 
