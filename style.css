@@ -19,4 +19,9 @@ table, th, td {
 }
 .navbar-custom{
 	background-color: #683072 !important;
+	color: #9795A8 !important;
+}
+btn-custom{
+	background-color: #E5D39C !important;
+	border: none; 
 }
