@@ -94,8 +94,11 @@
                     <option>Recto</option>
                 </select>
 
-                <button class="btn btn-purple mt-3 mb-3" onclick="calculateFare(false)">Regular Fare</button>
-                <button class="btn btn-secondary mt-3 mb-3" onclick="calculateFare(true)">Discounted Fare</button>
+                <div class="fare-buttons">
+		    <button class="btn btn-purple" onclick="calculateFare(false)">Regular Fare</button>
+		    <button class="btn btn-secondary" onclick="calculateFare(true)">Discounted Fare</button>
+		</div>
+
 
                 <p id="fare-result" class="mb-3"></p>
             </div>
