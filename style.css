@@ -44,7 +44,7 @@ table, th, td {
     background-attachment: fixed;
     text-align: center;
 }
-.main-cont, .fg-cont {
+.main-cont{
     background: rgba(255, 255, 153, 0.8); 
     padding: 20px;
     border-radius: 8px;
@@ -54,6 +54,19 @@ table, th, td {
     justify-content: center;
     width: 50%;
     margin: auto;
+}
+.fg-cont{
+    background-color: #561537; 
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+	
 }
 .ticket-image {
     width: 50%;
