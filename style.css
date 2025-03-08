@@ -150,5 +150,13 @@ footer a{
     justify-content: center; 
     margin-top: 1rem; 
 }
+body {
+    background-color: #f8f9fa;
+}
+.container-custom {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
