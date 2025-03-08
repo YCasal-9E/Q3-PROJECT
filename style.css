@@ -44,7 +44,7 @@ table, th, td {
     background-attachment: fixed;
     text-align: center;
 }
-.main-cont {
+.main-cont, .fg-cont {
     background: rgba(255, 255, 153, 0.8); 
     padding: 20px;
     border-radius: 8px;
