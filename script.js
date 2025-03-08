@@ -15,7 +15,7 @@ console.log("Script is loaded!");
             "Recto": { "Antipolo": 28, "Marikina-Pasig": 27, "Santolan": 25, "Katipunan": 24, "Anonas": 23, "Araneta Center-Cubao": 20, "Betty Go-Belmonte": 19, "Gilmore": 18, "J. Ruiz": 17, "V. Mapa": 16, "Pureza": 15, "Legarda": 14 }
          };
 
-    var fare = fareMatrix[from]?.[to]; 
+    var fare = fareMatrix[from]?.[to] || fareMatrix[to]?.[from];
 
     if (fare === undefined) {
         alert("Invalid route selected.");
