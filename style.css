@@ -1,37 +1,40 @@
-        .p2-body {
-           background-image: url('https://appassets.mvtdev.com/map/41/l/1022/237346/2.jpg'); 
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover; 
-	    background-attachment: fixed;
-            color: #63326E;
-        }
-        .main-container {
-            background-color: rgba(255, 210, 90, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .header-container {
-            background-color: #683072;
-	    color: white !important;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        table {
-            background-color: #63326E;
-            color: #FFD25A;
-	    text-align: center; 
-        }
-        th, td {
-            border: 1px solid white;
-            text-align: center;
-            padding: 10px;
-        }
-        .table thead {
-            background-color: #522A5C;
-        }
+.p2-body {
+   background-image: url('https://appassets.mvtdev.com/map/41/l/1022/237346/2.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: #63326E;
+}
+.main-container {
+    background-color: rgba(255, 210, 90, 0.8);
+    padding: 20px;
+    border-radius: 10px; 
+    font-family: Mukta !important;
+}
+.header-container {
+    background-color: #683072;
+    color: white !important;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Mukta !important;
+}
+table {
+    background-color: #63326E;
+    color: #FFD25A;
+    text-align: center;
+    font-family: Mukta !important; 
+}
+th, td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+.table thead {
+    background-color: #522A5C;
+}
 .navbar-custom {
     background-color: #683072 !important;
 }
