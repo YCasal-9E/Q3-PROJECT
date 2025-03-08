@@ -36,7 +36,6 @@ table, th, td {
     border: none;
 }
 .index-body {
-    font-family: Mukta !important;
     background-image: url('https://appassets.mvtdev.com/map/41/l/1022/237346/2.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
@@ -45,6 +44,7 @@ table, th, td {
     text-align: center;
 }
 .main-cont{
+    font-family: Mukta !important;
     background-color: rgba(233, 236, 236, 0.5);
     padding: 20px;
     border-radius: 8px;
@@ -54,6 +54,7 @@ table, th, td {
     margin-top: 10px;
 }
 .fg-cont{
+    font-family: Mukta !important;
     background-color: rgb(255, 255, 153); 
     padding: 20px;
     border-radius: 8px;
@@ -77,6 +78,7 @@ table, th, td {
 label, select, button, p {
     display: block;
     margin-bottom: 10px;
+    font-family: Mukta !important;
 }
 
 select, button {
@@ -85,6 +87,7 @@ select, button {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
+    font-family: Mukta !important;
 }
 
 button {
@@ -111,6 +114,7 @@ button:hover {
 footer a{
     text-decoration: none !important;
     color: gray !important;
+    font-family: Insconsolata !important;
 }
 .fare-buttons {
     display: flex;
