@@ -50,10 +50,10 @@ table, th, td {
     border-radius: 8px;
     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
-    width: 50%;
+    justify-content: start;
+    width: 60%;
     margin: auto;
 }
 .fg-cont{
@@ -71,9 +71,12 @@ table, th, td {
 .ticket-image {
     width: 50%;
     height: auto;
+    flex-shrink: 0;
 }
 .form-container {
     text-align: left;
+    flex-grow: 1;
+    padding-left: 20px;
 }
 label, select, button, p {
     display: block;
