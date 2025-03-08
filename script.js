@@ -1,6 +1,4 @@
-<script>
-
-        console.log("Script is loaded!");
+console.log("Script is loaded!");
         var fareMatrix = {
             "Antipolo": { "Marikina-Pasig": 13, "Santolan": 14, "Katipunan": 16, "Anonas": 18, "Cubao": 21, "Betty Go": 23, "Gilmore": 24, "J. Ruiz": 25, "V. Mapa": 26, "Pureza": 27, "Legarda": 28, "Recto": 30 },
             "Marikina-Pasig": { "Antipolo": 13, "Santolan": 13, "Katipunan": 15, "Anonas": 17, "Cubao": 20, "Betty Go": 22, "Gilmore": 23, "J. Ruiz": 24, "V. Mapa": 25, "Pureza": 26, "Legarda": 27, "Recto": 29 },
@@ -45,4 +43,3 @@
             alert(`Ticket Price: Php ${fare}`);
             document.getElementById("fare-result").innerText = `Ticket Price: Php ${fare}`;
         }
-    </script>
