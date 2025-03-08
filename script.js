@@ -15,36 +15,12 @@ console.log("Script is loaded!");
             "Recto": { "Antipolo": 28, "Marikina-Pasig": 27, "Santolan": 25, "Katipunan": 24, "Anonas": 23, "Araneta Center-Cubao": 20, "Betty Go-Belmonte": 19, "Gilmore": 18, "J. Ruiz": 17, "V. Mapa": 16, "Pureza": 15, "Legarda": 14 }
          };
         
-        var stations = Object.keys(fareMatrix);
-        var fromSelect = document.getElementById("from");
-        var toSelect = document.getElementById("to");
-
-        fromSelect.innerHTML = "";
-        toSelect.innerHTML = "";
-        
-        var stations = Object.keys(fareMatrix);
-        stations.forEach(station => {
-            var option1 = new Option(station, station);
-            var option2 = new Option(station, station);
-            fromSelect.add(option1);
-            toSelect.add(option2);
-        });
-
-        
         function calculateFare(isDiscounted) {
             var from = fromSelect.value;
             var to = toSelect.value;
             if (from === to) {
                 alert("Please select different stations.");
                 document.getElementById("fare-result").innerText = "Please select different stations.";
-                return;
-            }
-            
-            var fare = fareMatrix[from]?.[to] || fareMatrix[to]?.[from] || "N/A";
-            
-            if (fare === "N/A") {
-                alert("Fare not available for this route.");
-                document.getElementById("fare-result").innerText = "Fare not available for this route.";
                 return;
             }
             
