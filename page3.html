@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body class="body">
 <nav class="navbar navbar-expand-lg navbar-custom p-3">
     <div class="container-fluid">
       
@@ -48,83 +48,115 @@
     </div>
  </nav>	
 	
-<h1>Feedback Form: LRT 2</h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/LRT-2_Cubao_%28002%29_2024-05-26.jpg/450px-LRT-2_Cubao_%28002%29_2024-05-26.jpg">
+ <div class="container mt-5 container-custom">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Feedback Form: LRT 2</h1>
+        </div>
 
-<h4>On a scale of 1-5, rate our services. (1 is lowest while 5 is highest)</h4>
+        <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.postimg.cc/GpvWkbMb/Screenshot-2025-03-09-000113.png" class="d-block w-100" alt="Train Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.postimg.cc/J41z02zy/Untitled-design-2.png" class="d-block w-100" alt="LRT Route">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
 
-<div class="container mt-5 mb-5">
-<form>	
-	<p>Cleanliness of Trains and Stations</p>	
-		<input type="radio" name="1">
-			<label>5</label>
-		<input type="radio" name="1">	
-			<label>4</label>
-		<input type="radio" name="1">
-			<label>3</label>
-		<input type="radio" name="1">
-			<label>2</label>
-		<input type="radio" name="1">
-			<label>1</label>
-<br>
-	<p>Puncuality of Trains</p>	
-		<input type="radio" name="2">
-			<label>5</label>
-		<input type="radio" name="2">	
-			<label>4</label>
-		<input type="radio" name="2">
-			<label>3</label>
-		<input type="radio" name="2">
-			<label>2</label>
-		<input type="radio" name="2">
-			<label>1</label>
-<br>
-	<p>Quality of Train (good aircon?, comfortable seats?)</p>	
-		<input type="radio" name="3">
-			<label>5</label>
-		<input type="radio" name="3">	
-			<label>4</label>
-		<input type="radio" name="3">
-			<label>3</label>
-		<input type="radio" name="3">
-			<label>2</label>
-		<input type="radio" name="3">
-			<label>1</label>
-<br>			
-	<p>Quality of Station (well maintained?, proper ticketing stations)</p>
-		<input type="radio" name="4">
-			<label>5</label>
-		<input type="radio" name="4">	
-			<label>4</label>
-		<input type="radio" name="4">
-			<label>3</label>
-		<input type="radio" name="4">
-			<label>2</label>
-		<input type="radio" name="4">
-			<label>1</label>
-<br>
-	<p>Operating Hours</p>
-		<input type="radio" name="5">
-			<label>5</label>
-		<input type="radio" name="5">	
-			<label>4</label>
-		<input type="radio" name="5">
-			<label>3</label>
-		<input type="radio" name="5">
-			<label>2</label>
-		<input type="radio" name="5">
-			<label>1</label>			
-</form>
-</div>		
-
-<div class="container mt-5 mb-5">	
-	<p>Any more suggestions?</p>
-	<label>Feedback:</label>
-	<textarea></textarea>
-</div>			
-
-<button class="button" onclick="window.alert('This has been noted.')" onclick="window.location.reload()">Submit</button>
-<button type="button" onclick="window.location.reload()">Refresh</button>
+        <h4>On a scale of 1-5, rate our services. (1 is lowest while 5 is highest)</h4>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Cleanliness of Trains and Stations</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="cleanliness" id="clean5" value="5">
+                    <label class="btn btn-outline-primary" for="clean5">5</label>
+                    <input type="radio" class="btn-check" name="cleanliness" id="clean4" value="4">
+                    <label class="btn btn-outline-primary" for="clean4">4</label>
+                    <input type="radio" class="btn-check" name="cleanliness" id="clean3" value="3">
+                    <label class="btn btn-outline-primary" for="clean3">3</label>
+                    <input type="radio" class="btn-check" name="cleanliness" id="clean2" value="2">
+                    <label class="btn btn-outline-primary" for="clean2">2</label>
+                    <input type="radio" class="btn-check" name="cleanliness" id="clean1" value="1">
+                    <label class="btn btn-outline-primary" for="clean1">1</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Punctuality of Trains</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="punctuality" id="punc5" value="5">
+                    <label class="btn btn-outline-primary" for="punc5">5</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc4" value="4">
+                    <label class="btn btn-outline-primary" for="punc4">4</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc3" value="3">
+                    <label class="btn btn-outline-primary" for="punc3">3</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc2" value="2">
+                    <label class="btn btn-outline-primary" for="punc2">2</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc1" value="1">
+                    <label class="btn btn-outline-primary" for="punc1">1</label>
+                </div>
+            </div>
+	    <div class="mb-3">
+                <label class="form-label">Quality of Trains (aircon, seats, etc.)</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="punctuality" id="punc5" value="5">
+                    <label class="btn btn-outline-primary" for="punc5">5</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc4" value="4">
+                    <label class="btn btn-outline-primary" for="punc4">4</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc3" value="3">
+                    <label class="btn btn-outline-primary" for="punc3">3</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc2" value="2">
+                    <label class="btn btn-outline-primary" for="punc2">2</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc1" value="1">
+                    <label class="btn btn-outline-primary" for="punc1">1</label>
+                </div>
+            </div>
+	    <div class="mb-3">
+                <label class="form-label">Quality of Stations (well-maintained, proper ticketing stations, etc.)</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="punctuality" id="punc5" value="5">
+                    <label class="btn btn-outline-primary" for="punc5">5</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc4" value="4">
+                    <label class="btn btn-outline-primary" for="punc4">4</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc3" value="3">
+                    <label class="btn btn-outline-primary" for="punc3">3</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc2" value="2">
+                    <label class="btn btn-outline-primary" for="punc2">2</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc1" value="1">
+                    <label class="btn btn-outline-primary" for="punc1">1</label>
+                </div>
+            </div>
+	    <div class="mb-3">
+                <label class="form-label">Operating Hours</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="punctuality" id="punc5" value="5">
+                    <label class="btn btn-outline-primary" for="punc5">5</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc4" value="4">
+                    <label class="btn btn-outline-primary" for="punc4">4</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc3" value="3">
+                    <label class="btn btn-outline-primary" for="punc3">3</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc2" value="2">
+                    <label class="btn btn-outline-primary" for="punc2">2</label>
+                    <input type="radio" class="btn-check" name="punctuality" id="punc1" value="1">
+                    <label class="btn btn-outline-primary" for="punc1">1</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Any more suggestions?</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-secondary">Refresh</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
   
