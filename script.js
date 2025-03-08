@@ -11,13 +11,18 @@ console.log("Script is loaded!");
         var stations = Object.keys(fareMatrix);
         var fromSelect = document.getElementById("from");
         var toSelect = document.getElementById("to");
+
+        fromSelect.innerHTML = "";
+        toSelect.innerHTML = "";
         
+        var stations = Object.keys(fareMatrix);
         stations.forEach(station => {
             var option1 = new Option(station, station);
             var option2 = new Option(station, station);
             fromSelect.add(option1);
             toSelect.add(option2);
         });
+
         
         function calculateFare(isDiscounted) {
             var from = fromSelect.value;
