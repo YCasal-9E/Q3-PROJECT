@@ -107,5 +107,9 @@ button:hover {
     background-color: #611143 !important;
     color: #ffffff !important;
 }
+footer a{
+    text-decoration: none !important;
+    color: gray !important;
+}
 
 
