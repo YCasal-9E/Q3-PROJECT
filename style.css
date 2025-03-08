@@ -12,7 +12,8 @@
             border-radius: 10px;
         }
         .header-container {
-            background-color: rgba(255, 210, 90, 0.9);
+            background-color: #683072;
+	    color: white !important;
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 15px;
