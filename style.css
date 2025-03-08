@@ -104,7 +104,7 @@ button:hover {
     margin-top: 10px;
 }
 .btn-purple{
-    background-color: #611143;
+    background-color: #611143 !important;
 }
 
 
