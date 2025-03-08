@@ -36,7 +36,7 @@ table, th, td {
     border: none;
 }
 .index-body {
-    font-family: Mukta;
+    font-family: Mukta !important;
     background-image: url('https://appassets.mvtdev.com/map/41/l/1022/237346/2.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
