@@ -15,28 +15,31 @@ console.log("Script is loaded!");
             "Recto": { "Antipolo": 28, "Marikina-Pasig": 27, "Santolan": 25, "Katipunan": 24, "Anonas": 23, "Araneta Center-Cubao": 20, "Betty Go-Belmonte": 19, "Gilmore": 18, "J. Ruiz": 17, "V. Mapa": 16, "Pureza": 15, "Legarda": 14 }
          };
 
-    var fare = fareMatrix[from]?.[to] || fareMatrix[to]?.[from];
+   function calculateFare(isDiscounted) {
+    var from = document.getElementById("from").value;
+    var to = document.getElementById("to").value;
 
-    if (!fare) {
+    if (from === to) {
+        alert("Please select different stations.");
+        document.getElementById("fare-result").innerText = "Please select different stations.";
+        return;
+    }
+
+    var fare = fareMatrix[from] && fareMatrix[from][to];
+
+    if (fare === undefined) {
         alert("Invalid route selected.");
         document.getElementById("fare-result").innerText = "Invalid route selected.";
         return;
     }
-        
-        function calculateFare(isDiscounted) {
-           var from = document.getElementById("from").value;
-           var to = document.getElementById("to").value;
 
-            if (from === to) {
-                alert("Please select different stations.");
-                document.getElementById("fare-result").innerText = "Please select different stations.";
-                return;
-            }
-            
-            if (isDiscounted) {
-                fare = fare - (fare * 0.20);
-            }
-            
-            alert(`Ticket Price: Php ${fare}`);
-            document.getElementById("fare-result").innerText = `Ticket Price: Php ${fare}`;
-        }
+    var discountedFare = fare - (fare * 0.20);
+
+    if (isDiscounted) {
+        alert(`Discounted Ticket Price: Php ${discountedFare.toFixed(2)}`);
+        document.getElementById("fare-result").innerText = `Discounted Ticket Price: Php ${discountedFare.toFixed(2)}`;
+    } else {
+        alert(`Regular Ticket Price: Php ${fare}`);
+        document.getElementById("fare-result").innerText = `Regular Ticket Price: Php ${fare}`;
+    }
+}
