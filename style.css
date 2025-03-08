@@ -45,10 +45,10 @@ table, th, td {
     text-align: center;
 }
 .main-cont{
-    background: rgba(255, 255, 153, 0.8); 
+    background-color: rgba(233, 236, 236, 0.5);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +56,10 @@ table, th, td {
     margin: auto;
 }
 .fg-cont{
-    background-color: #561537; 
+    background-color: rgb(255, 255, 153); 
     padding: 20px;
     border-radius: 8px;
     color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
