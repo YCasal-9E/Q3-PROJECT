@@ -17,11 +17,22 @@ table, th, td {
 	color: #FFD25A;
 	text-align: center;
 }
-.navbar-custom{
-	background-color: #683072 !important;
-	color: #9795A8 !important;
+.navbar-custom {
+    background-color: #683072 !important;
 }
-.btn-custom{
-	background-color: #E5D39C !important;
-	border: none; 
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #9795A8 !important;
 }
+
+.navbar-custom .nav-link:hover {
+    color: #E5D39C !important;
+}
+
+.btn-custom {
+    background-color: #E5D39C !important;
+    color: #000 !important; /* Makes text readable */
+    border: none;
+}
+
