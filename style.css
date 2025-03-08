@@ -114,7 +114,7 @@ button:hover {
 footer a{
     text-decoration: none !important;
     color: gray !important;
-    font-family: Insconsolata !important;
+    font-family: Inconsolata !important;
 }
 .fare-buttons {
     display: flex;
