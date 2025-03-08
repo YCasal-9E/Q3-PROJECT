@@ -41,7 +41,51 @@
             </form>
         </div>
     </div>
- </nav>	
+ </nav>
+
+<div class="container">
+        <img src="train-ticket.png" alt="Train Ticket" class="ticket-image"> <!-- Train ticket image -->
+        <div class="form-container">
+            <h2>MRT Fare Calculator</h2>
+            <label for="from">Leaving From:</label>
+		<option value="" disabled selected>Select station</option>
+		<option>Santolan</option>
+		<option>Katipunan</option>
+		<option>Anonas</option>
+		<option>Araneta Center-Cubao</option>
+		<option>Betty Go-Belmonte</option>
+		<option>Gilmore</option>
+		<option>J. Ruiz</option>
+		<option>V. Mapa</option>
+		<option>Pureza</option>
+		<option>Legarda</option>
+		<option>Recto</option>
+            <select id="from"></select>
+            
+            <label for="to">Going To:</label>
+            <select id="to">
+		<option value="" disabled selected>Select station</option>
+		<option>Santolan</option>
+		<option>Katipunan</option>
+		<option>Anonas</option>
+		<option>Araneta Center-Cubao</option>
+		<option>Betty Go-Belmonte</option>
+		<option>Gilmore</option>
+		<option>J. Ruiz</option>
+		<option>V. Mapa</option>
+		<option>Pureza</option>
+		<option>Legarda</option>
+		<option>Recto</option>
+	    </select>
+            
+            <button onclick="calculateFare(false)">Regular Fare</button>
+            <button onclick="calculateFare(true)">Discounted Fare</button>
+            
+            <label for="fare-result">Ticket Price:</label>
+            <p id="fare-result">Ticket Price: </p>
+        </div>
+</div>
+	
 </body>
 </html>
   
