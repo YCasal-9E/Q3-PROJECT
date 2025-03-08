@@ -35,6 +35,9 @@ th, td {
 .table thead {
     background-color: #522A5C;
 }
+.list-group-item{
+    color: #301934 !important;
+}
 .navbar-custom {
     background-color: #683072 !important;
 }
