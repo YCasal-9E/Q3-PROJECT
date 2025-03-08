@@ -1,12 +1,12 @@
 console.log("Script is loaded!");
         var fareMatrix = {
-            "Antipolo": { "Marikina-Pasig": 13, "Santolan": 14, "Katipunan": 16, "Anonas": 18, "Cubao": 21, "Betty Go": 23, "Gilmore": 24, "J. Ruiz": 25, "V. Mapa": 26, "Pureza": 27, "Legarda": 28, "Recto": 30 },
-            "Marikina-Pasig": { "Antipolo": 13, "Santolan": 13, "Katipunan": 15, "Anonas": 17, "Cubao": 20, "Betty Go": 22, "Gilmore": 23, "J. Ruiz": 24, "V. Mapa": 25, "Pureza": 26, "Legarda": 27, "Recto": 29 },
-            "Santolan": { "Antipolo": 14, "Marikina-Pasig": 13, "Katipunan": 13, "Anonas": 15, "Cubao": 18, "Betty Go": 20, "Gilmore": 21, "J. Ruiz": 22, "V. Mapa": 23, "Pureza": 24, "Legarda": 25, "Recto": 27 },
-            "Katipunan": { "Antipolo": 16, "Marikina-Pasig": 15, "Santolan": 13, "Anonas": 13, "Cubao": 16, "Betty Go": 18, "Gilmore": 19, "J. Ruiz": 20, "V. Mapa": 21, "Pureza": 22, "Legarda": 23, "Recto": 25 },
-            "Anonas": { "Antipolo": 18, "Marikina-Pasig": 17, "Santolan": 15, "Katipunan": 13, "Cubao": 14, "Betty Go": 16, "Gilmore": 17, "J. Ruiz": 18, "V. Mapa": 19, "Pureza": 20, "Legarda": 21, "Recto": 23 },
-            "Cubao": { "Antipolo": 21, "Marikina-Pasig": 20, "Santolan": 18, "Katipunan": 16, "Anonas": 14, "Betty Go": 13, "Gilmore": 14, "J. Ruiz": 15, "V. Mapa": 16, "Pureza": 17, "Legarda": 18, "Recto": 20 }
-        };
+            "Antipolo": { "Marikina-Pasig": 13, "Santolan": 14, "Katipunan": 15, "Anonas": 16, "Cubao": 17, "Betty Go": 18, "Gilmore": 19, "J. Ruiz": 20, "V. Mapa": 22, "Pureza": 23, "Legarda": 25, "Recto": 28 },
+            "Marikina-Pasig": { "Antipolo": 13, "Santolan": 13, "Katipunan": 14, "Anonas": 15, "Cubao": 16, "Betty Go": 17, "Gilmore": 18, "J. Ruiz": 19, "V. Mapa": 21, "Pureza": 22, "Legarda": 24, "Recto": 27 },
+            "Santolan": { "Antipolo": 14, "Marikina-Pasig": 13, "Katipunan": 13, "Anonas": 14, "Cubao": 15, "Betty Go": 16, "Gilmore": 17, "J. Ruiz": 18, "V. Mapa": 19, "Pureza": 20, "Legarda": 22, "Recto": 25 },
+            "Katipunan": { "Antipolo": 15, "Marikina-Pasig": 14, "Santolan": 13, "Anonas": 13, "Cubao": 14, "Betty Go": 15, "Gilmore": 16, "J. Ruiz": 17, "V. Mapa": 18, "Pureza": 19, "Legarda": 21, "Recto": 24 },
+            "Anonas": { "Antipolo": 16, "Marikina-Pasig": 15, "Santolan": 14, "Katipunan": 13, "Cubao": 13, "Betty Go": 14, "Gilmore": 15, "J. Ruiz": 16, "V. Mapa": 17, "Pureza": 18, "Legarda": 20, "Recto": 23 },
+            "Cubao": { "Antipolo": 17, "Marikina-Pasig": 16, "Santolan": 15, "Katipunan": 14, "Anonas": 13, "Betty Go": 13, "Gilmore": 14, "J. Ruiz": 15, "V. Mapa": 16, "Pureza": 17, "Legarda": 18, "Recto": 20 }
+         };
         
         var stations = Object.keys(fareMatrix);
         var fromSelect = document.getElementById("from");
