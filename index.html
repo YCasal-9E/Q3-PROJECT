@@ -12,7 +12,7 @@
 	<script src="js/script.js" defer></script>
 </head>
 
-<body>
+<body class="index-body">
  <nav class="navbar navbar-expand-lg navbar-custom p-3">
     <div class="container-fluid">
       
@@ -48,6 +48,7 @@
         <div class="form-container">
             <h2>MRT Fare Calculator</h2>
             <label for="from">Leaving From:</label>
+            <select id="from">
 		<option value="" disabled selected>Select station</option>
 		<option>Santolan</option>
 		<option>Katipunan</option>
@@ -60,7 +61,7 @@
 		<option>Pureza</option>
 		<option>Legarda</option>
 		<option>Recto</option>
-            <select id="from"></select>
+	    </select>
             
             <label for="to">Going To:</label>
             <select id="to">
