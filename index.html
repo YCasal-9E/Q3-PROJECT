@@ -47,47 +47,64 @@
 	<div class="container-fluid p-4 fg-cont mt-2 mb-4">
         <h1 class="text-center">Fare Guide</h1>
 	</div>
-        <img src="tix.png" alt="Train Ticket" class="ticket-image"> 
-        <div class="form-container">
-            <label for="from" class="form-label">Leaving From:</label>
-            <select id="from" class="form-select">
-		<option value="" disabled selected>Select station</option>
-		<option>Santolan</option>
-		<option>Katipunan</option>
-		<option>Anonas</option>
-		<option>Araneta Center-Cubao</option>
-		<option>Betty Go-Belmonte</option>
-		<option>Gilmore</option>
-		<option>J. Ruiz</option>
-		<option>V. Mapa</option>
-		<option>Pureza</option>
-		<option>Legarda</option>
-		<option>Recto</option>
-	    </select>
-            
-            <label for="to" class="form-label">Going To:</label>
-            <select id="to" class="form-select">
-		<option value="" disabled selected>Select station</option>
-		<option>Santolan</option>
-		<option>Katipunan</option>
-		<option>Anonas</option>
-		<option>Araneta Center-Cubao</option>
-		<option>Betty Go-Belmonte</option>
-		<option>Gilmore</option>
-		<option>J. Ruiz</option>
-		<option>V. Mapa</option>
-		<option>Pureza</option>
-		<option>Legarda</option>
-		<option>Recto</option>
-	    </select>
-            
-            <button class="btn btn-primary" onclick="calculateFare(false)">Regular Fare</button>
-            <button class="btn btn-secondary" onclick="calculateFare(true)">Discounted Fare</button>
-            
-           <p class="mt-3 fw-bold">Ticket Price:</p>
-            <p id="fare-result" class="mb-3"></p>
+
+<div class="container main-cont mt-4 mb-4 p-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="container-fluid p-4 fg-cont mt-2 mb-4">
+                <h1 class="text-center">Fare Guide</h1>
+            </div>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="tix.png" alt="Train Ticket" class="ticket-image img-fluid"> 
+        </div>
+        <div class="col-md-8 p-4">
+            <div class="form-container">
+                <label for="from" class="form-label">Leaving From:</label>
+                <select id="from" class="form-select">
+                    <option value="" disabled selected>Select station</option>
+                    <option>Santolan</option>
+                    <option>Katipunan</option>
+                    <option>Anonas</option>
+                    <option>Araneta Center-Cubao</option>
+                    <option>Betty Go-Belmonte</option>
+                    <option>Gilmore</option>
+                    <option>J. Ruiz</option>
+                    <option>V. Mapa</option>
+                    <option>Pureza</option>
+                    <option>Legarda</option>
+                    <option>Recto</option>
+                </select>
+
+                <label for="to" class="form-label mt-3">Going To:</label>
+                <select id="to" class="form-select">
+                    <option value="" disabled selected>Select station</option>
+                    <option>Santolan</option>
+                    <option>Katipunan</option>
+                    <option>Anonas</option>
+                    <option>Araneta Center-Cubao</option>
+                    <option>Betty Go-Belmonte</option>
+                    <option>Gilmore</option>
+                    <option>J. Ruiz</option>
+                    <option>V. Mapa</option>
+                    <option>Pureza</option>
+                    <option>Legarda</option>
+                    <option>Recto</option>
+                </select>
+
+                <button class="btn btn-primary mt-3" onclick="calculateFare(false)">Regular Fare</button>
+                <button class="btn btn-secondary mt-2" onclick="calculateFare(true)">Discounted Fare</button>
+
+                <p class="mt-3 fw-bold">Ticket Price:</p>
+                <p id="fare-result" class="mb-3"></p>
+            </div>
+        </div>
+    </div>
 </div>
+
 	
 </body>
 </html>
