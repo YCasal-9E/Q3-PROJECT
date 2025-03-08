@@ -111,5 +111,11 @@ footer a{
     text-decoration: none !important;
     color: gray !important;
 }
+.fare-buttons {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    margin-top: 1rem; 
+}
 
 
