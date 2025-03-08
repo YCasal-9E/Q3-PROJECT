@@ -56,7 +56,7 @@ table, th, td {
     margin: auto;
 }
 .ticket-image {
-    width: 150px;
+    width: 80%;
     height: auto;
     margin-right: 20px;
 }
