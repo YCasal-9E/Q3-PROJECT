@@ -20,9 +20,12 @@ table, th, td {
     background-color: #683072 !important;
 }
 
-.navbar-custom .nav-link,
-.navbar-custom .navbar-brand {
+.navbar-custom .nav-link {
     color: #ffffff !important;
+    font-family: Inconsolata !important;
+}
+.navbar-custom .navbar-brand {
+    color: #E5D39C !important;
     font-family: Inconsolata !important;
 }
 
