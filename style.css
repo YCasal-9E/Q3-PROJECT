@@ -23,6 +23,7 @@ table, th, td {
 .navbar-custom .nav-link,
 .navbar-custom .navbar-brand {
     color: #ffffff !important;
+    font-family: Inconsolata;
 }
 
 .navbar-custom .nav-link:hover {
