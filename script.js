@@ -17,15 +17,16 @@ console.log("Script is loaded!");
 
     var fare = fareMatrix[from]?.[to] || fareMatrix[to]?.[from];
 
-    if (fare === undefined) {
+    if (!fare) {
         alert("Invalid route selected.");
         document.getElementById("fare-result").innerText = "Invalid route selected.";
         return;
     }
         
         function calculateFare(isDiscounted) {
-            var from = fromSelect.value;
-            var to = toSelect.value;
+           var from = document.getElementById("from").value;
+           var to = document.getElementById("to").value;
+
             if (from === to) {
                 alert("Please select different stations.");
                 document.getElementById("fare-result").innerText = "Please select different stations.";
