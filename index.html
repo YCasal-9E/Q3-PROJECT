@@ -43,12 +43,15 @@
     </div>
  </nav>
 
+<div class="container fg-cont mt-4">
+        <h1 class="text-center">Fare Guide</h1>
+</div>
+	
 <div class="container main-cont mt-4">
         <img src="tix.png" alt="Train Ticket" class="ticket-image"> 
         <div class="form-container">
-            <h2>MRT Fare Calculator</h2>
-            <label for="from">Leaving From:</label>
-            <select id="from">
+            <label for="from" class="form-label">Leaving From:</label>
+            <select id="from" class="form-select">
 		<option value="" disabled selected>Select station</option>
 		<option>Santolan</option>
 		<option>Katipunan</option>
@@ -63,8 +66,8 @@
 		<option>Recto</option>
 	    </select>
             
-            <label for="to">Going To:</label>
-            <select id="to">
+            <label for="to" class="form-label">Going To:</label>
+            <select id="to" class="form-select">
 		<option value="" disabled selected>Select station</option>
 		<option>Santolan</option>
 		<option>Katipunan</option>
@@ -79,11 +82,11 @@
 		<option>Recto</option>
 	    </select>
             
-            <button onclick="calculateFare(false)">Regular Fare</button>
-            <button onclick="calculateFare(true)">Discounted Fare</button>
+            <button class="btn btn-primary" onclick="calculateFare(false)">Regular Fare</button>
+            <button class="btn btn-secondary" onclick="calculateFare(true)">Discounted Fare</button>
             
-            <label for="fare-result">Ticket Price:</label>
-            <p id="fare-result">Ticket Price: </p>
+           <p class="mt-3 fw-bold">Ticket Price:</p>
+            <p id="fare-result" class="mb-3"></p>
         </div>
 </div>
 	
