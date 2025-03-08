@@ -109,6 +109,7 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    color: #301934;
 }
 .btn-purple{
     background-color: #611143 !important;
