@@ -170,10 +170,10 @@
             </div>
             <div class="mb-3">
                 <label class="form-label ">Any more suggestions?</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" id="userSuggestion" rows="3" onchange="capitalizeFirstLetter(this)"></textarea>
             </div>
             <div class="mt-4 d-flex justify-content-between">
-                <button type="submit" class="btn btn-success" onclick="alert('This is noted.')">Submit</button>
+                <button type="submit" class="btn btn-success" onclick="submitForm()">Submit</button>
                 <button type="reset" class="btn btn-secondary">Refresh</button>
             </div>
         </form>
