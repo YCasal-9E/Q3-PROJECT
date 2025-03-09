@@ -162,8 +162,14 @@ footer a{
     height: 450px;
     object-fit: cover;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(50%);
+.carousel-control-prev,
+.carousel-control-next {
+    filter: none !important;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(128, 0, 128, 0.3); 
+    border-radius: 50%; 
 }
 .btn-group {
     display: flex;
