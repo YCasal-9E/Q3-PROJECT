@@ -44,11 +44,20 @@ console.log("Script is loaded!");
     }
 }
 
-function submitForm() {
-    let name = document.getElementById("userName").value;
-    if (name.trim() === "") name = "Guest"; 
-    alert("This is noted, " + name + ".");
+function submitForm(event) {
+        let name = document.getElementById("userName").value.trim();
+        let email = document.getElementById("userEmail").value.trim();
+        
+        if (name === "" || email === "") { 
+            alert("Please enter both your name and email before submitting!");
+            event.preventDefault(); 
+            return; 
+        }
+        
+        alert("This is noted, " + name + "!");
 }
+
+
 
 function capitalizeFirstLetter(id) {
         var input = document.getElementById(id); 
