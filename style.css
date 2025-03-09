@@ -169,7 +169,7 @@ footer a{
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: rgba(128, 0, 128, 0.3); 
-    border-radius: 50%; 
+    border-radius: 80%; 
 }
 .btn-group {
     display: flex;
