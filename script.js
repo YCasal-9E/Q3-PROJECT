@@ -43,3 +43,17 @@ console.log("Script is loaded!");
         document.getElementById("fare-result").innerText = `Regular Ticket Price: Php ${fare}`;
     }
 }
+
+function submitForm() {
+    let name = document.getElementById("userName").value;
+    if (name.trim() === "") name = "Guest"; 
+    alert("This is noted, " + name + ".");
+}
+
+function capitalizeFirstLetter(input) {
+    let words = input.value.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    input.value = words.join(" ");
+}
